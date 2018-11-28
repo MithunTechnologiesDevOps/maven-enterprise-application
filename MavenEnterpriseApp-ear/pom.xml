@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <parent>
+        <artifactId>MavenEnterpriseApp</artifactId>
+        <groupId>com.mt</groupId>
+        <version>1.0</version>
+    </parent>
+  <groupId>com.mt</groupId>
+  <artifactId>MavenEnterpriseApp-ear</artifactId>
+  <packaging>ear</packaging>
+  <version>1.0</version>
+  <name>MavenEnterpriseApp-ear JavaEE6 Assembly</name>
+  <url>http://maven.apache.org</url>
+
+  <build>
+    <finalName>MavenEnterpriseApp-ear</finalName>
+  </build>
+    <dependencies>
+        <dependency>
+            <groupId>com.mt</groupId>
+            <artifactId>MavenEnterpriseApp-web</artifactId>
+            <version>1.0</version>
+            <type>war</type>
+        </dependency>
+    </dependencies>
+</project>
+
