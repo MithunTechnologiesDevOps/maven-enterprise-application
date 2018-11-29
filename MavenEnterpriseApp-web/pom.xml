@@ -1,35 +1,47 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
-    <modelVersion>4.0.0</modelVersion>
-    <parent>
-        <artifactId>maven-enterprise-application</artifactId>
-        <groupId>com.mt</groupId>
-        <version>1.0</version>
-    </parent>
-    <groupId>com.mt</groupId>
-    <artifactId>MavenEnterpriseApp-web</artifactId>
-    <packaging>war</packaging>
-    <version>1.0</version>
-    <name>MavenEnterpriseApp-web Java EE 6 Webapp</name>
-    <url>http://maven.apache.org</url>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+
+	<parent>
+		<artifactId>maven-enterprise-application</artifactId>
+		<groupId>com.mt</groupId>
+		<version>1.0</version>
+	</parent>
+
+	<groupId>com.mt</groupId>
+	<artifactId>maven-enterprise-application</artifactId>
+	<packaging>war</packaging>
+	<version>1.0</version>
+
+	<name>MavenEnterpriseApplication</name>
+	<url>http://mithuntechnologies.com</url>
+	
+	<description>Maven Enterprise Project</description>
+
+	<organization>
+		<name>Mithun Technologies</name>
+		<url>http://mithuntechnologies.com/</url>
+	</organization>
+
+	<properties>
+		<!-- versions -->
+		<spring.version>5.0.2.RELEASE</spring.version>
+		<junit.version>4.12</junit.version>
+		<log4j.version>1.2.17</log4j.version>
+		<sonar.host.url>http://localhost:9000/</sonar.host.url>
+
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
+	</properties>
+
 	<dependencies>
 
-		<dependency>
-			<groupId>org.springframework</groupId>
-			<artifactId>spring-core</artifactId>
-			<version>${spring.version}</version>
-		</dependency>
-
-		<dependency>
-			<groupId>org.springframework</groupId>
-			<artifactId>spring-webmvc</artifactId>
-			<version>${spring.version}</version>
-		</dependency>
-
+		<!-- test dependencies -->
 		<dependency>
 			<groupId>junit</groupId>
 			<artifactId>junit</artifactId>
-			<version>4.12</version>
+			<version>${junit.version}</version>
 		</dependency>
 
 		<dependency>
@@ -45,15 +57,57 @@
 			<version>1.9.5</version>
 			<scope>test</scope>
 		</dependency>
+
+		<!-- compile dependencies -->
+
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-core</artifactId>
+			<version>${spring.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-web</artifactId>
+			<version>${spring.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-webmvc</artifactId>
+			<version>${spring.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-context</artifactId>
+			<version>${spring.version}</version>
+		</dependency>
+
+		<!-- provided dependencies -->
+
 		<dependency>
 			<groupId>javax.servlet</groupId>
 			<artifactId>javax.servlet-api</artifactId>
 			<version>3.1.0</version>
 			<scope>provided</scope>
 		</dependency>
+
 	</dependencies>
+	
+	<distributionManagement>
+	    <repository>
+	      <id>nexus</id>
+	      <name>Mithun Technologies Releases Nexus Repository</name>
+	      <url>http://localhost:8085/mithuntechnologies/repository/flipkart-releases/</url>
+	    </repository>
+	    <snapshotRepository>
+	      <id>nexus</id>
+	      <name>Mithun Technologies Snapshot Nexus Repository </name>
+	      <url>http://localhost:8085/mithuntechnologies/repository/flipkart-snapshot/</url>
+	    </snapshotRepository>
+	</distributionManagement>
+	
+
 	<build>
-		 <finalName>MavenEnterpriseApp-web</finalName>
+		<finalName>MavenEnterpriseApplication</finalName>
 		<plugins>
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
@@ -68,9 +122,7 @@
 		</plugins>
 	</build>
 
-	<properties>
-		<spring.version>4.0.2.RELEASE</spring.version>
-	</properties>
+
 </project>
 
 
