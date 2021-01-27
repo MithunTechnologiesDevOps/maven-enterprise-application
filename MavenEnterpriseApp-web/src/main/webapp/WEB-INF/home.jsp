@@ -21,14 +21,14 @@
 
 	</span>
 	<span style="font-weight: bold;">
-		Manoj Indalkar
+		Swayam Indalkar
 		+91-9552877667
 	</span>
 </div>
 <hr>
 	<p> Service : <a href="${pageContext.request.contextPath}/services/getEmployeeDetails">Get Employee Details </p>
 <hr>
-<p align=center>MNIDevops Technologies - Consultant, Training, Development Center.</p>
+<p align=center>Swayam Manoj Indalkar</p>
 <p align=center><small>Copyrights 2018 by <a href="http://mithuntechnologies.com/">Mithun Technologies</a> </small></p>
 
 </body>
