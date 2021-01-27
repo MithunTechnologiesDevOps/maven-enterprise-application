@@ -19,7 +19,7 @@
 	<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 	<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
 </properties>
-  <distributionManagement>
+ <!-- <distributionManagement>
 	  <repository>
 		  <id>nexus</id>
 		  <name>MNIDevops Techno</name>
@@ -31,4 +31,5 @@
 		  <url>http://13.233.54.98:8081/repository/mni_ecomm_snapshot/</url>
 	  </snapshotRepository>
 	</distributionManagement>
+-->
 </project>
