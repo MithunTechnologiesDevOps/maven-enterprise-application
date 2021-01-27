@@ -25,10 +25,10 @@
 		  <name>MNIDevops Techno</name>
 		  <url>http://13.233.54.98:8081/repository/mni_ecomm_release/</url>
 	  </repository>
-	  <snapshotrepository>
+	  <snapshotRepository>
 		  <id>nexus</id>
 		  <name>MNIDevops Techno</name>
 		  <url>http://13.233.54.98:8081/repository/mni_ecomm_snapshot/</url>
-	  </snapshotrepository>
+	  </snapshotRepository>
 	</distributionManagement>
 </project>
