@@ -11,7 +11,7 @@
     <module>MavenEnterpriseApp-ear</module>
     <module>MavenEnterpriseApp-web</module>
   </modules>
-  
+
   <properties>
 	<!-- versions -->
 	<sonar.host.url>http://localhost:9000/</sonar.host.url>
